@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<main class="bsod container">
+  <head><style>
+    body {background-color: powderblue;}
+    h1   {
+      filter:blur(2px);
+      font-size: 50px;
+      color: white;
+      position: absolute;
+      left: 100px;
+      top: 150px;
+
+    }
+
+    /* unvisited link */
+a:link {
+ color: white;
+}
+
+/* visited link */
+a:visited {
+ color: blue;
+}
+
+/* mouse over link */
+a:hover {
+ color: black;
+}
+
+/* selected link */
+a:active {
+ color: blue;
+}
+
+    @keyframes bgcolor {
+    0% {
+        background-color: rgb(20,0,0)
+    }
+
+    30% {
+        background-color: rgb(0,20,0)
+    }
+
+    60% {
+        background-color: rgb(0,0,20)
+    }
+
+    90% {
+        background-color: rgb(10,10,0)
+    }
+
+    100% {
+        background-color: black
+    }
+}
+
+body {
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+  </style>
+</head>
+<h1 class="neg title"><span class="bg"><a href="index.html">Error - 404</a></span></h1>
+</main>
+</html>
